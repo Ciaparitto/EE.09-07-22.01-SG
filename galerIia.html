@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <div id="baner">
+        <h2>Galeria miejsc ciekawych</h2>
+    </div>
+    <div id="glowny">
+        <img src="lanzarotte.jpg" alt="" id="zdjglowny">
+    </div>
+    <div id="lewy"> <h3>przegladaj zdjecia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte.jpg" class="zdjlewy">
+        <img src="pekin.jpg" alt="pekin.jpg" class="zdjlewy">
+        <img src="serengeti.jpg" alt="serengeti.jpg" class="zdjlewy">
+        <img src="wenecja.jpg" alt="wenecja.jpg" class="zdjlewy">
+        <img src="tajlandia.jpg" alt="tajlandia.jpg" class="zdjlewy"></div>
+    <div id="prawy">
+        <h3>Obrazy w naszej galeri</h3>
+        <table>
+            <tr>
+                <td>europa</td>
+                <td>azja</td>
+                <td>afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>polub nas <img src="icon-off.png" alt="" onclick="zmien()" id="dozmiany"></p>
+        <a href="https://pixbay.com" target="_blank"></a>
+    </div>
+    <footer>Autor:0000000</footer>
+</body>
+<script>
+    var state = false;
+    function zmien()
+    {
+        state = !state;
+        alert(state);
+        if(state)
+        {
+            document.getElementById("dozmiany").setAttribute("src","icon-on.png");
+        }else{
+            document.getElementById("dozmiany").setAttribute("src","icon-off.png");
+        }
+    }
+</script>
+</html>
